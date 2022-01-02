@@ -12,7 +12,7 @@ import javax.validation.Payload;
 @Target({ElementType.PARAMETER})
 @Constraint(validatedBy = CurrencyValidator.class)
 public @interface IsCurrencyValid {
-	String message() default "Invalid value for currency conversion";
+	String message() default "Invalid bill provided. Please provide bill in denomination of 1,2,5,10,20,50,100";
 
 	Class<?>[] groups() default {};
 
